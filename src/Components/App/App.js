@@ -1,15 +1,27 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import PropTypes from "prop-types";
-import "./App.css";
-// import FirstPage from "../FirstPage/FirstPage";
-// import SecondPage from "../SecondPage/SecondPage";
+import "../App/App.css";
+import SecondPage from "../SecondPage/SecondPage";
 import AddText from "../AddText/AddText";
-import List from "../List/List";
+import Message from "../Message/Message";
+
+import "swiper/swiper-bundle.css";
 
 function App() {
   const [textArray, setTA] = React.useState([
-    { id: 1, title: "First text" },
-    { id: 2, title: "Second text" },
+    { id: 1, title: "Первый введённый текст отображается вот тут." },
+    { id: 2, title: "Второй введённый текст." },
+    {
+      id: 3,
+      title:
+        "Анимация для отображения текста - хороший повод проявить фантазию.",
+    },
+    {
+      id: 4,
+      title:
+        "Текст может быть и подлиннее, тогда он займёт несколько строк, не забудьте про это.",
+    },
   ]);
 
   function addText(title) {
@@ -25,10 +37,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello, World!</h1>
-      <List textArray={textArray} />
-      <AddText onCreate={addText} />
-      {/* <SecondPage /> */}
+      <Swiper spaceBetween={5} slidesPerView={1}>
+        <SwiperSlide className="App-2">
+          <div>
+            <AddText onCreate={addText} />
+            <Message textArray={textArray} className="App-3" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="App-4">
+          <SecondPage />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.page-time {
+  min-width: 375px;
+  min-height: 812px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.text-block {
+  font-size: 50px;
+  color: #f3f3f3;
+}
+
+p {
+  color: #f3f3f3;
+}
+
+.ghost-text {
+  color: teal;
+}

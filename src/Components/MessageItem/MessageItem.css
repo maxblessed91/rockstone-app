@@ -1,0 +1,14 @@
+li {
+  list-style-type: none;
+  animation: fade-anim 1.3s ease;
+  margin: 35px 0 35px 0;
+}
+
+@keyframes fade-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

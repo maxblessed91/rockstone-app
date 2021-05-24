@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import Message from "./../Message/Message";
-// import AddText from './FirstPage';
+import "./AddText.css";
 
 function AddText({ onCreate }) {
   const [value, setValue] = useState("");
@@ -21,8 +20,11 @@ function AddText({ onCreate }) {
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder="Type some text"
+        className="input"
       />
-      <button type="submit">Submit</button>
+      <button type="submit" className="send-btn">
+        Send
+      </button>
     </form>
   );
 }
