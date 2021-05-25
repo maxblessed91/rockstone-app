@@ -59,14 +59,14 @@ body {
     text-shadow: #5dc8e5 0 0 5px;
   }
 
-  .App-2 {
+  .slide-first {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 375px;
   }
 
-  .App-3 {
+  .message {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -17,4 +17,5 @@ p {
 
 .ghost-text {
   color: teal;
+  text-shadow: none;
 }

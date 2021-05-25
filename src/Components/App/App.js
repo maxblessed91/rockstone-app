@@ -38,13 +38,13 @@ function App() {
   return (
     <div className="App">
       <Swiper spaceBetween={5} slidesPerView={1}>
-        <SwiperSlide className="App-2">
+        <SwiperSlide className="slide-first">
           <div>
             <AddText onCreate={addText} />
-            <Message textArray={textArray} className="App-3" />
+            <Message textArray={textArray} className="message" />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="App-4">
+        <SwiperSlide className="slide-second">
           <SecondPage />
         </SwiperSlide>
       </Swiper>
